@@ -2,5 +2,5 @@ using DevOpsMWE
 using Test
 
 @testset "DevOpsMWE.jl" begin
-    # Write your tests here.
+    @test greet() == "Hello, World!"
 end
