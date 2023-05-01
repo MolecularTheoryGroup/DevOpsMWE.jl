@@ -13,5 +13,4 @@ deploydocs(
     target = "build",
     branch = "gh-pages",
     devbranch = "main",
-    ssh = false,
 )
