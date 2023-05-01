@@ -1,0 +1,23 @@
+name: Format
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'src/**'
+  pull_request:
+  workflow_dispatch:
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: '1.8'
+      - run: julia -e 'using Pkg; Pkg.add(["JuliaFormatter"])'
+      - run: julia --project=. -e 'using JuliaFormatter; format(".", BlueStyle(), verbose=true, indent=4, margin=92, always_for_in=true, for_in_replacement="∈")'
+      - name: Check for changes
+        run: |
+          git diff --exit-code

@@ -1,0 +1,18 @@
+name = "DevOpsMWE"
+uuid = "6fa51601-25ab-4a5f-92f9-69c4adb29fa7"
+authors = ["Tim Wilson <twilsonco@gmail.com> and contributors"]
+version = "1.0.0-DEV"
+
+[deps]
+Coverage = "a2441757-f6aa-5fb2-8edb-039e3f45d037"
+Interpolations = "a98d9a8b-a2ab-59e6-89dd-64a1c18fca59"
+JuliaFormatter = "98e50ef6-434e-11e9-1051-2b60c6c9e899"
+
+[compat]
+julia = "1.9"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
