@@ -6,6 +6,8 @@ on:
       - main
   pull_request:
 
+permissions: write-all
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
