@@ -1,0 +1,3 @@
+var documenterSearchIndex = {"docs":
+[{"location":"#Markdown-file-that-is-included-in-the-generated-docs","page":"Markdown file that is included in the generated docs","title":"Markdown file that is included in the generated docs","text":"","category":"section"},{"location":"","page":"Markdown file that is included in the generated docs","title":"Markdown file that is included in the generated docs","text":"This is a markdown file.","category":"page"},{"location":"","page":"Markdown file that is included in the generated docs","title":"Markdown file that is included in the generated docs","text":"And I wonder how many nifty markdown tricks you can use here?","category":"page"}]
+}
