@@ -8,6 +8,7 @@ on:
       - 'docs/**'
       - 'src/**'
   pull_request:
+  workflow_dispatch:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: ${{ startsWith(github.ref, 'refs/pull/') }}
